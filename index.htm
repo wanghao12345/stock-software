@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="shortcut icon" type="image/x-icon" href="http://www.hhgzbet.com/bitbug_favicon.ico"> 
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title></title>
+<link href="css/css.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script> 
+<body>
+<div class="login-wrap">
+	<div class="login-box">
+		<div class="login-th">股票交易系统</div>
+		<div class="login-tline"></div>
+		<div class="login-close"><img src="images/close_big@3x.png"/></div>
+		<div class="login-kuang">
+			<div class="kimg"><img src="images/corner@3x.png"/></div>
+			<div class="login-k-tlt">用户登录 V1.0.0.30</div>
+			<div class="login-k-box">
+				<div class="login-k-tb">
+					<div class="login-tb-lt">站&nbsp;&nbsp;&nbsp;&nbsp;点:</div>
+					<input type="text" id="txt" class="login-tb-rt" />
+					<div class="set"><img src="images/set@4x.png"/></div>
+					<div class="pull-img"><img src="images/pull.png"/></div>
+					<div class="login-select">
+						<ul>
+							<li>1</li>
+							<li>2</li>
+							<li>3</li>
+							<li>4</li>
+							<li>5</li>
+							<li>6</li>
+							<li>7</li>
+						</ul>
+					</div>
+				</div>
+				<div class="login-k-tb">
+					<div class="login-tb-lt">账&nbsp;&nbsp;&nbsp;&nbsp;号:</div>
+					<input type="text" class="login-tb-rt" />
+					
+				</div>
+				<div class="login-k-tb">
+					<div class="login-tb-lt">密&nbsp;&nbsp;&nbsp;&nbsp;码:</div>
+					<input type="text" class="login-tb-rt" />
+				</div>
+				<div class="login-k-tb">
+					<div class="login-tb-lt">验证码:</div>
+					<input type="text" class="login-tb-rt widt" /><img class="yzm" src="images/yanzhengma@3x.png"/>
+				</div>
+				<div class="xuankuang"><span class="icon"></span>记住用户名</div>
+				<div class="xuan-btn-box">
+					<span class="xuan-btn">登录</span>
+					<span class="xuan-btn">取消</span>
+				</div>
+			</div>
+			<div class="error"></div>
+		</div>
+		<div class="zhuang-type">登录进度</div>
+		<div class="zhuang-type2">验证账号密码…</div>
+	</div>
+</div>
+	<div class="pop-wrap pop-gai2">
+		<div class="error-box">
+			<div class="error-img"><img src="images/zhuyi@3x.png"/></div>
+			<div class="error-tlt">验证码错误</div>
+			<div class="error-btn">确定</div>
+		</div>
+	</div>
+	<div class="pop-wrap pop-gai">
+		<div class="pop-up">
+				<div class="title fl">配置服务器 <div class="close">x</div></div>
+				<ul class="input-wrap fl">
+					<li class="input-item">
+						<div class="name">站点名称:</div>
+						<input type="text" class="input">
+					</li>
+					<li class="input-item">
+						<div class="name">交易服务器</div>
+						<div class="line"></div>
+					</li>
+					<li class="input-item">
+						<div class="name">地址:</div>
+						<input type="text" class="input">
+					</li>
+					<li class="input-item">
+						<div class="name">接口:</div>
+						<input type="text" class="input">
+					</li>
+					<li class="input-item">
+						<div class="name">行情服务器</div>
+						<div class="line"></div>
+					</li>
+					<li class="input-item">
+						<div class="name">地址:</div>
+						<input type="text" class="input">
+					</li>
+					<li class="input-item">
+						<div class="name">接口:</div>
+						<input type="text" class="input">
+					</li>
+					<li class="input-item">
+						<div class="name">历史服务器</div>
+						<div class="line"></div>
+					</li>
+					<li class="input-item">
+						<div class="name">地址:</div>
+						<input type="text" class="input">
+					</li>
+					<li class="input-item">
+						<div class="name">接口:</div>
+						<input type="text" class="input">
+					</li>
+					<li class="input-item">
+						<div class="name">行情排序服务</div>
+						<div class="line"></div>
+					</li>
+					<li class="input-item">
+						<div class="name">地址:</div>
+						<input type="text" class="input">
+					</li>
+				</ul>
+				<div class="btn-wrap fl">
+					<button class="btn-save">保存</button>
+				</div>
+			</div>	
+	</div>
+</body>
+
+<script>
+
+	$(document).ready(function() {
+		$('.set').on('click',function(){
+			$('.pop-gai').show()
+		})
+		$('.close').on('click',function(){
+			$('.pop-gai').hide()
+		})
+		
+		$('.xuankuang').on('click',function(){
+			var ishas = $(this).hasClass('on')
+			if(!ishas){
+			   $(this).addClass('on')
+			}else{
+			   $(this).removeClass('on')
+			}
+			
+		})
+		$('#txt').on('click',function(){
+			$('.login-select').slideToggle()
+		})
+		
+		$('.login-select ul li').on('click',function(){
+			$('#txt').val($(this).text());
+			$('.login-select').slideUp()
+		})
+		
+		$('.error-btn').on('click',function(){
+			$('.pop-gai2').hide()
+		})
+		
+		
+	})
+
+</script>
+
+
+
+
+
+
+</html>
+
+
+
+
+
+
+
+
+

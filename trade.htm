@@ -1,0 +1,444 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="shortcut icon" type="image/x-icon" href="http://www.hhgzbet.com/bitbug_favicon.ico"> 
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title></title>
+<link href="css/css.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script> 
+<body>
+	<div class="trade-wrap">
+		<div class="trade-header">
+			<div class="trade-logo-tlt">
+				<img src="images/logos.png"/><span>交易端</span>
+			</div>
+			<div class="trade-rt">
+				<div class="trade-user">
+					<div class="trade-user-icon"><img src="images/user.png"/></div>
+					12345678987
+					<div class="trade-down"><img src="images/down.png"/></div>
+				</div>
+				<div class="trade-h-btn">增加账户</div>
+				<div class="trade-h-btn">修改密码</div>
+				<div class="trade-h-line"></div>
+				<div class="trade-search">
+					<img src="images/search_gray.png"/>
+					<input class="trade-int" placeholder="请输入股票代码/名称"/>
+				</div>
+				<div class="trade-chuang-box">
+					<div class="chuang-box icon1"></div>
+					<div class="chuang-box icon2"></div>
+					<div class="chuang-box icon3"></div>
+				</div>
+			</div>
+		</div>
+		<div class="trade-right-box">
+			<div class="trade-box-w"  style="display:none;">
+				<div class="trade-box-hd">
+					<div class="trade-hd-t">代码</div>
+					<div class="trade-hd-t2 gai">名称</div>
+					<div class="trade-hd-t2">涨幅%</div>
+					<div class="trade-hd-t2">最新价</div>
+					<div class="trade-hd-t2">涨跌</div>
+					<div class="trade-hd-t2">成交手数 </div>
+					<div class="trade-hd-t2">昨收</div>
+					<div class="trade-hd-t2">开盘</div>
+					<div class="trade-hd-t2">最高</div>
+					<div class="trade-hd-t2">最低</div>
+					<div class="trade-hd-t2">成交额</div>
+				</div>
+				<div class="trade-box-n select">
+					<div class="trade-hd-t yellow">000001</div>
+					<div class="trade-hd-t2 gai yellow">上证指数</div>
+					<div class="trade-hd-t2 red">1.23</div>
+					<div class="trade-hd-t2 red">2345.56</div>
+					<div class="trade-hd-t2 red">8.54</div>
+					<div class="trade-hd-t2">4.50亿</div>
+					<div class="trade-hd-t2">1234.43</div>
+					<div class="trade-hd-t2 red">1234.76 </div>
+					<div class="trade-hd-t2 red">1234.76</div>
+					<div class="trade-hd-t2 red">1234.76</div>
+					<div class="trade-hd-t2">1.46亿</div>
+				</div>
+				<div class="trade-box-n">
+					<div class="trade-hd-t yellow">000001</div>
+					<div class="trade-hd-t2 gai yellow">上证指数</div>
+					<div class="trade-hd-t2 red">1.23</div>
+					<div class="trade-hd-t2 red">2345.56</div>
+					<div class="trade-hd-t2 red">8.54</div>
+					<div class="trade-hd-t2">4.50亿</div>
+					<div class="trade-hd-t2">1234.43</div>
+					<div class="trade-hd-t2 red">1234.76 </div>
+					<div class="trade-hd-t2 red">1234.76</div>
+					<div class="trade-hd-t2 red">1234.76</div>
+					<div class="trade-hd-t2">1.46亿</div>
+				</div>
+			</div>
+			
+			<div class="trade-box-w">
+				<div class="trade-box-hd">
+					<div class="trade-hd-t">代码</div>
+					<div class="trade-hd-t2 wid gai">名称</div>
+					<div class="trade-hd-t2 wid">涨幅%</div>
+					<div class="trade-hd-t2 wid">最新价</div>
+					<div class="trade-hd-t2 wid">涨跌</div>
+					<div class="trade-hd-t2 wid">买价 </div>
+					<div class="trade-hd-t2 wid">买量</div>
+					<div class="trade-hd-t2 wid">卖量</div>
+					<div class="trade-hd-t2 wid">总手</div>
+					<div class="trade-hd-t2 wid">昨收</div>
+					<div class="trade-hd-t2 wid">开盘</div>
+					<div class="trade-hd-t2 wid">最高</div>
+					<div class="trade-hd-t2 wid">最低</div>
+					<div class="trade-hd-t2 wid">振幅%</div>
+					<div class="trade-hd-t2 wid">成交额</div>
+					<div class="trade-hd-t2 wid">总市值</div>
+				</div>
+				<div class="trade-box-n select">
+					<div class="trade-hd-t yellow">000001</div>
+					<div class="trade-hd-t2 wid gai yellow">中国宝安</div>
+					<div class="trade-hd-t2 wid red">0.26</div>
+					<div class="trade-hd-t2 wid red">15.38</div>
+					<div class="trade-hd-t2 wid red">0.04</div>
+					<div class="trade-hd-t2 wid">15.38</div>
+					<div class="trade-hd-t2 wid">15.39</div>
+					<div class="trade-hd-t2 wid red">1333 </div>
+					<div class="trade-hd-t2 wid red">3355</div>
+					<div class="trade-hd-t2 wid red">140.3万</div>
+					<div class="trade-hd-t2 wid">15.34</div>
+					<div class="trade-hd-t2 wid">15.34</div>
+					<div class="trade-hd-t2 wid">15.18</div>
+					<div class="trade-hd-t2 wid">1.89</div>
+					<div class="trade-hd-t2 wid">21.49亿</div>
+					<div class="trade-hd-t2 wid">2906亿</div>
+				</div>
+				<div class="trade-box-n">
+					<div class="trade-hd-t yellow">000001</div>
+					<div class="trade-hd-t2 wid gai yellow">中国宝安</div>
+					<div class="trade-hd-t2 wid red">0.26</div>
+					<div class="trade-hd-t2 wid red">15.38</div>
+					<div class="trade-hd-t2 wid red">0.04</div>
+					<div class="trade-hd-t2 wid">15.38</div>
+					<div class="trade-hd-t2 wid">15.39</div>
+					<div class="trade-hd-t2 wid red">1333 </div>
+					<div class="trade-hd-t2 wid red">3355</div>
+					<div class="trade-hd-t2 wid red">140.3万</div>
+					<div class="trade-hd-t2 wid">15.34</div>
+					<div class="trade-hd-t2 wid">15.34</div>
+					<div class="trade-hd-t2 wid">15.18</div>
+					<div class="trade-hd-t2 wid">1.89</div>
+					<div class="trade-hd-t2 wid">21.49亿</div>
+					<div class="trade-hd-t2 wid">2906亿</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="trade-left">
+		<div class="trade-li on">
+			<div class="img ic1"></div>
+			<div class="txt">指数</div>
+		</div>
+		<div class="trade-li">
+			<div class="img ic2"></div>
+			<div class="txt">沪深</div>
+		</div>
+		<div class="trade-li">
+			<div class="img ic3"></div>
+			<div class="txt">中小板</div>
+		</div>
+		<div class="trade-li">
+			<div class="img ic4"></div>
+			<div class="txt">创业板</div>
+		</div>
+		<div class="trade-li">
+			<div class="img ic5"></div>
+			<div class="txt">自选股</div>
+		</div>
+	</div>
+	
+	<div class="trade-bottom-box">
+		<div class="bottom-head">
+			<div class="bottom-head-btn select">买入</div>
+			<div class="bottom-head-btn">卖出</div>
+			<div class="bottom-head-btn">撤单</div>
+			<div class="bottom-head-btn">查询</div>
+			<div class="bot-head-rgt">
+				<div class="bot-box1">
+					<img src="images/zichan@3x.png"/>总资产:123456789.01
+				</div>
+				<div class="bot-box1">
+					<img src="images/money@3x.png"/>总资产:123456789.01
+				</div>
+				<div class="bot-img" id="bot-img"><img src="images/zuixiaohua.png"/></div>
+			</div>
+		</div>
+		<div class="bot-name-box">
+			<div class="bot-name-th">买入股票: 平安银行</div>
+			<div class="bot-form-box">
+				<div class="bot-form-lt">股票代码:</div>
+				<input type="text" class="bot-form-int" placeholder="股票代码"/>
+			</div>
+			<div class="bot-form-box">
+				<div class="bot-form-lt">委托价格:</div>
+				<div class="bot-form-int wid">
+					<input id="mpbox" type="number" class="bot-form-int2" placeholder="委托价格"/>
+					<div class="bot-form-price" id="mprice">
+						<div class="img"></div>市价
+					</div>
+					<div class="bot-up-down">
+						<div class="bot-up price-add"></div>
+						<div class="bot-down price-elss"></div>
+					</div>
+				</div>
+			</div>
+			<div class="bot-form-box">
+				<div class="bot-form-lt">可用资金:</div>
+				<input type="number"  class="bot-form-int" placeholder="可用资金"/>
+			</div>
+			<div class="bot-form-box">
+				<div class="bot-form-lt">可买数量:</div>
+				<input type="number"  class="bot-form-int" placeholder="可买数量"/>
+			</div>
+			<div class="bot-select-box">
+				<div class="select-box gai"><span></span>全部</div>
+				<div class="select-box"><span></span>1/2</div>
+				<div class="select-box"><span></span>1/3</div>
+				<div class="select-box"><span></span>1/4</div>
+			</div>
+			<div class="bot-form-box">
+				<div class="bot-form-lt">买入数量:</div>
+				<div class="bot-form-int wid">
+					<input type="number" class="bot-form-int3" id="num" placeholder="请输入买入数量"/>
+					<div class="bot-form-price padt">股</div>
+					<div class="bot-up-down gai">
+						<div class="bot-up gu-add"></div>
+						<div class="bot-down gu-elss"></div>
+					</div>
+				</div>
+			</div>
+			<div class="trade-btn-box">
+				<div class="btn-box1">复位</div>
+				<div class="btn-box2"><span></span>买入</div>
+			</div>
+			
+			
+		</div>
+		<div class="bot-form-cent">
+			<div class="bot-cent">
+				<div class="bot-cent-tb">
+					<div class="bot-cent-t">卖5</div>
+					<div class="bot-cent-t red">345</div>
+					<div class="bot-cent-t green">23123</div>
+				</div>
+				<div class="bot-cent-tb">
+					<div class="bot-cent-t">卖4</div>
+					<div class="bot-cent-t red">345</div>
+					<div class="bot-cent-t green">23123</div>
+				</div>
+				<div class="bot-cent-tb">
+					<div class="bot-cent-t">卖3</div>
+					<div class="bot-cent-t red">345</div>
+					<div class="bot-cent-t green">23123</div>
+				</div>
+				<div class="bot-cent-tb">
+					<div class="bot-cent-t">卖2</div>
+					<div class="bot-cent-t red">345</div>
+					<div class="bot-cent-t green">23123</div>
+				</div>
+				<div class="bot-cent-tb">
+					<div class="bot-cent-t">卖1</div>
+					<div class="bot-cent-t red">345</div>
+					<div class="bot-cent-t green">23123</div>
+				</div>
+			</div>
+		    <div class="bot-cent mart">
+				<div class="bot-cent-tb">
+					<div class="bot-cent-t">买5</div>
+					<div class="bot-cent-t red">345</div>
+					<div class="bot-cent-t green">23123</div>
+				</div>
+				<div class="bot-cent-tb">
+					<div class="bot-cent-t">买4</div>
+					<div class="bot-cent-t red">345</div>
+					<div class="bot-cent-t green">23123</div>
+				</div>
+				<div class="bot-cent-tb">
+					<div class="bot-cent-t">买3</div>
+					<div class="bot-cent-t red">345</div>
+					<div class="bot-cent-t green">23123</div>
+				</div>
+				<div class="bot-cent-tb">
+					<div class="bot-cent-t">买2</div>
+					<div class="bot-cent-t red">345</div>
+					<div class="bot-cent-t green">23123</div>
+				</div>
+				<div class="bot-cent-tb">
+					<div class="bot-cent-t">买1</div>
+					<div class="bot-cent-t red">345</div>
+					<div class="bot-cent-t green">23123</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="bot-form-rt">
+			<div class="form-rt-head">
+				<div class="form-rt-nav active">持仓<div class="rt-line"></div></div>
+				<div class="form-rt-nav">委托<div class="rt-line"></div></div>
+				<div class="form-rt-nav">成交<div class="rt-line"></div></div>
+				<div class="form-rt-nav">资金<div class="rt-line"></div></div>
+				<div class="form-shua">刷新</div>
+			</div>
+			<div class="form-rt-subhead">
+				<div class="subhead-nav">股票代码</div>
+				<div class="subhead-nav">股票名称</div>
+				<div class="subhead-nav">总持仓数</div>
+				<div class="subhead-nav">可卖数量</div>
+				<div class="subhead-nav">冻结数量</div>
+				<div class="subhead-nav">参考成本价</div>
+				<div class="subhead-nav">成交均价</div>
+				<div class="subhead-nav">当前价</div>
+				<div class="subhead-nav">参考盈亏</div>
+				<div class="subhead-nav">持仓市值</div>
+				<div class="subhead-nav">盈亏比例</div>                         
+			</div>
+			<div class="form-rt-neir">
+				<div class="neir-nav">000009</div>
+				<div class="neir-nav">中国宝安</div>
+				<div class="neir-nav">100000</div>
+				<div class="neir-nav">20000</div>
+				<div class="neir-nav">4670</div>
+				<div class="neir-nav">4.50</div>
+				<div class="neir-nav">4.50</div>
+				<div class="neir-nav">4.50</div>
+				<div class="neir-nav red">4.50</div>
+				<div class="neir-nav">123456.04</div>
+				<div class="neir-nav green">-10.00%</div>                         
+			</div>
+			<div class="form-rt-neir">
+				<div class="neir-nav">000009</div>
+				<div class="neir-nav">中国宝安</div>
+				<div class="neir-nav">100000</div>
+				<div class="neir-nav">20000</div>
+				<div class="neir-nav">4670</div>
+				<div class="neir-nav">4.50</div>
+				<div class="neir-nav">4.50</div>
+				<div class="neir-nav">4.50</div>
+				<div class="neir-nav red">4.50</div>
+				<div class="neir-nav">123456.04</div>
+				<div class="neir-nav green">-10.00%</div>                         
+			</div>
+		</div>
+		<div class="banben">
+			<div class="ban-t">版本:<span class="green"> v1.0.0.0</span></div>
+			<div class="ban-t">交易服务:<span class="green"> 已连接</span></div>
+			<div class="ban-t">行情服务:<span class="green"> 已连接</span></div>
+		</div>
+	</div>
+	<div class="for-bottom-box">
+		<div class="bot-head-rgt flot">
+			<div class="bot-box1">
+				<img src="images/zichan@3x.png"/>总资产:123456789.01
+			</div>
+			<div class="bot-box1">
+				<img src="images/money@3x.png"/>总资产:123456789.01
+			</div>
+		</div>
+		<div class="bot-img2"><img src="images/zuidahua.png"/></div>
+	</div>
+	
+</body>
+
+
+<script>
+
+	$(document).ready(function() {
+		var isMprice = false //是否市价
+		$('#mprice').on('click',function(){
+			if($(this).hasClass('gai'))
+			{
+				$(this).removeClass('gai');
+				$('#mpbox').removeAttr('readOnly','readOnly')
+				isMprice = false
+			}else{
+			   $('#mpbox').attr('readOnly','readOnly')
+			   $(this).addClass('gai');
+			   isMprice = true
+			}
+		});
+		
+		$('.bot-img').on('click',function(){
+			$(".trade-bottom-box").hide()
+			$(".for-bottom-box").show()
+			
+		});
+		$('.bot-img2').on('click',function(){
+		
+			$('.trade-bottom-box').show()
+			$('.for-bottom-box').hide()
+		});
+		
+		$('.select-box').on('click',function(){
+			$(this).addClass('gai').siblings().removeClass('gai')
+		});
+		
+		$('.gu-add').on('click',function(){
+			var num = $('#num').val() 
+			if(!num){
+				num = 0
+			}
+			num++
+			$('#num').val(num) 
+		});
+		$('.gu-elss').on('click',function(){
+			var num = $('#num').val() 
+			if(!num || num<=0){
+				num = 0
+				return
+			}
+			num--
+			$('#num').val(num) 
+		});
+		$('.price-add').on('click',function(){
+			if(isMprice){
+				return
+			}
+			var num = parseFloat($('#mpbox').val()) 
+			if(!num){
+				num = 0
+			}
+			num = num + 0.01
+			$('#mpbox').val(num) 
+		});
+		$('.price-elss').on('click',function(){
+			if(isMprice){
+				return
+			}
+			var num = parseFloat($('#mpbox').val()) 
+			if(!num || num==0){
+				num = 0
+				return
+			}
+			num = num - 0.01
+			$('#mpbox').val(num) 
+		});
+		
+		
+	})
+
+</script>
+
+
+
+
+
+</html>
+
+
+
+
+
+
+
+
+
